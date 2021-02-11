@@ -31,11 +31,13 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     @Bean
     public AuthenticationManager authenticationManagerBean() throws Exception {
+        System.out.println("DDDDDD 33 ");
         return super.authenticationManagerBean();
     }
 
     @Autowired
     public void globalUserDetails(AuthenticationManagerBuilder auth) throws Exception {
+        System.out.println("DDDDDD "+userDetailsService.toString());
         auth.userDetailsService(userDetailsService)
                 .passwordEncoder(encoder());
     }
@@ -56,6 +58,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Bean
     public BCryptPasswordEncoder encoder(){
+        System.out.println("DDDDDD 22 ");
         return new BCryptPasswordEncoder();
     }
 
