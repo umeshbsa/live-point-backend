@@ -26,8 +26,7 @@
     <show-object-properties value="true" />
     <loaded-nodes>
       <connection connection-id="05a98ec5-9ead-4897-945c-990d038200b5">
-        <schema name="live_point_backend" object-types="function, table" />
-        <schema name="user" object-types="function" />
+        <schema name="live_point_backend" object-types="table" />
       </connection>
     </loaded-nodes>
   </component>
