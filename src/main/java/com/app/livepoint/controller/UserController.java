@@ -13,26 +13,25 @@ import com.app.livepoint.model.User;
 import com.app.livepoint.service.UserService;
 
 @RestController
-@RequestMapping("/users")
+@RequestMapping("/user")
 public class UserController {
 
     @Autowired
     private UserService userService;
 
-    @RequestMapping(value="/user", method = RequestMethod.GET)
+    @RequestMapping(value="/get", method = RequestMethod.GET)
     public List<User> listUser(){
         return userService.findAll();
     }
 
-    @RequestMapping(value = "/user", method = RequestMethod.POST)
+    @RequestMapping(value = "/signup", method = RequestMethod.POST)
     public User create(@RequestBody User user){
         return userService.save(user);
     }
 
-    @RequestMapping(value = "/user/{id}", method = RequestMethod.DELETE)
+    @RequestMapping(value = "/delete/{id}", method = RequestMethod.DELETE)
     public String delete(@PathVariable(value = "id") Long id){
         userService.delete(id);
         return "success";
     }
-
 }

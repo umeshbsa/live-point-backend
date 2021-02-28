@@ -24,11 +24,7 @@
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
-    <loaded-nodes>
-      <connection connection-id="05a98ec5-9ead-4897-945c-990d038200b5">
-        <schema name="live_point_backend" object-types="table" />
-      </connection>
-    </loaded-nodes>
+    <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="05a98ec5-9ead-4897-945c-990d038200b5">
@@ -46,9 +42,6 @@
   </component>
   <component name="DBNavigator.Project.ExecutionManager">
     <retain-sticky-names value="false" />
-  </component>
-  <component name="DBNavigator.Project.FileConnectionMappingManager">
-    <mapping file-url="file://$PROJECT_DIR$/src/main/resources/data.sql" connection-id="05a98ec5-9ead-4897-945c-990d038200b5" session-id="MAIN" current-schema="live_point_backend" />
   </component>
   <component name="DBNavigator.Project.MethodExecutionManager">
     <method-browser />
