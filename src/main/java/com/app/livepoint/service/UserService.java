@@ -2,15 +2,17 @@ package com.app.livepoint.service;
 
 import java.util.List;
 
-import org.springframework.stereotype.Service;
-
-import com.app.livepoint.model.User;
+import com.app.livepoint.dao.User;
 
 public interface UserService {
 
-	User save(User user);
+    User userSignUp(User user);
 
-	List<User> findAll();
+    User userSignIn(User user);
 
-	void delete(long id);
+    List<User> findAllUser();
+
+    User findUserById(long userId);
+
+    void delete(long id);
 }

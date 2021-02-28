@@ -1,0 +1,10 @@
+com/app/livepoint/model/User.class
+com/app/livepoint/LivepointApplication.class
+com/app/livepoint/config/SecurityConfig.class
+com/app/livepoint/controller/UserController.class
+com/app/livepoint/config/AuthorizationServerConfig.class
+com/app/livepoint/model/User$1.class
+com/app/livepoint/repo/UserDao.class
+com/app/livepoint/config/ResourceServerConfig.class
+com/app/livepoint/service/impl/UserServiceImpl.class
+com/app/livepoint/service/UserService.class

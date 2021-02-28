@@ -10,6 +10,9 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.E
 import org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerEndpointsConfigurer;
 import org.springframework.security.oauth2.provider.token.TokenStore;
 
+
+// provide token and validate
+
 @Configuration
 @EnableAuthorizationServer
 public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdapter {
@@ -23,8 +26,8 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 	static final String SCOPE_READ = "read";
 	static final String SCOPE_WRITE = "write";
 	static final String TRUST = "trust";
-	static final int ACCESS_TOKEN_VALIDITY_SECONDS = 2 * 60 * 60;
-	static final int FREFRESH_TOKEN_VALIDITY_SECONDS = 6 * 60 * 60;
+	static final int ACCESS_TOKEN_VALIDITY_SECONDS = 120 * 60 * 60;
+	static final int FREFRESH_TOKEN_VALIDITY_SECONDS = 120 * 60 * 60;
 
 	@Autowired
 	private TokenStore tokenStore;
